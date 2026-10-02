@@ -3,14 +3,18 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8.">
-        <title>my profile site</title>
+        <title>My profile Site</title>
     </head>
     <body>
       <header>
-          <h1>My Site</h1>
+          <h1>Marvellous Emmanuel</h1>
+          <button id="navToggle" aria-label="Toggle navigation">=</button>
           <nav>
-            <a href="home">Home</a>
-            <a href="about">About</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contacts</a>
           </nav>
       </header>
       <main> 
@@ -18,19 +22,39 @@
             <h2>About Me</h2>
             <p>I`m learning web development</p>
         </section>
-      </main>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required
-        <label for="message">Message:</label>
-        <input type="text" id="message" name="message" required
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      <footer>
-        <p>&copy; 2026 Marvellous Emmanuel</p>
-      </footer>
+        <section> id="skill">
+          <h2>Skills</h2>
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Sit &amp; GitHub</div>
+          <div class="skill-card">Responsive Design</div>
+          <div class="skill-card">Web Security Basic</div>
+        </section>
+        <section id="Projects">
+          <h2>Projects</h2>
+          <div> id="ProjectsContainer"> class="<project-grid">
+            <p>Loading Projects...</p>
+          </div>
+        </section>
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <form id="contactForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required
+              <label for="message">Message:</label>
+              <input type="text" id="message" name="message" required
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="yeaar">2026</span> Marvellous Emmanuel</p>
+    </footer>
+        
     </body>
 </html>
